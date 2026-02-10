@@ -32,27 +32,27 @@ const data = {
   user: {
     name: "admin",
     email: "admin@email.com",
-    avatar: "/public/images/pos.png",
+    avatar: "https://raw.githubusercontent.com/LeptOn30/erp-app/main/frontend/public/images/pos.png",
   },
   navMain: [
     {
       title: "Dashboard",
-      url: "#",
+      url: "/dashboard",
       icon: IconDashboard,
     },
     {
       title: "Categories",
-      url: "#",
+      url: "/dashboard/categories",
       icon: IconListDetails,
     },
     {
       title: "Products",
-      url: "#",
+      url: "/dashboard/products",
       icon: IconPackage,
     },
     {
       title: "Sales",
-      url: "#",
+      url: "/dashboard/sales",
       icon: IconShoppingCart,
     },
   ],
@@ -107,14 +107,14 @@ const data = {
   navSecondary: [
     {
       title: "Settings",
-      url: "#",
+      url: "/dashboard/settings",
       icon: IconSettings,
     },
   ],
   documents: [
     {
       name: "Reports",
-      url: "#",
+      url: "/dashboard/reports",
       icon: IconReport,
     },
   ],

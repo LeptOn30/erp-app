@@ -18,6 +18,10 @@ import {
   useSidebar,
 } from "@/components/ui/sidebar"
 
+
+import Link from "next/link";
+
+
 export function NavDocuments({
   items
 }) {
@@ -48,26 +52,32 @@ export function NavDocuments({
                 align={isMobile ? "end" : "start"}>
                 <DropdownMenuItem>
                   <IconCalendarClock />
-                  <span>Today Sales</span>
+                  <span>
+                    <Link key="Today Sales" href="/dashboard/reports/today-sales">
+                      Today Sales
+                    </Link>
+                  </span>
                 </DropdownMenuItem>
                 <DropdownMenuItem>
                   <IconCalendarWeek />
-                  <span>Weekly Sales</span>
+                  <span>
+                    <Link key="Weekly Sales" href="/dashboard/reports/weekly-sales">
+                      Weekly Sales
+                    </Link>
+                  </span>
                 </DropdownMenuItem>
                 <DropdownMenuItem>
                   <IconCalendarMonth />
-                  <span>Monthly Sales</span>
+                  <span>
+                    <Link key="Monthly Sales" href="/dashboard/reports/monthly-sales">
+                      Monthly Sales 
+                    </Link>
+                  </span>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
           </SidebarMenuItem>
         ))}
-        {/* <SidebarMenuItem>
-          <SidebarMenuButton className="text-sidebar-foreground/70">
-            <IconDots className="text-sidebar-foreground/70" />
-            <span>More</span>
-          </SidebarMenuButton>
-        </SidebarMenuItem> */}
       </SidebarMenu>
     </SidebarGroup>
   );
